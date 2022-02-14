@@ -6,3 +6,16 @@ body,
     margin:0;
     padding:0;
 }
+
+.el-breadcrumb{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.el-card{
+    box-shadow: 0 10px 10px #333;
+}
+
+.el-row{
+    margin-bottom: 15px;
+}
