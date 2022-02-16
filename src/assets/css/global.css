@@ -5,6 +5,7 @@ body,
     height:100%;
     margin:0;
     padding:0;
+    min-width: 1366px;
 }
 
 .el-breadcrumb{
@@ -14,8 +15,4 @@ body,
 
 .el-card{
     box-shadow: 0 10px 10px #333;
-}
-
-.el-row{
-    margin-bottom: 15px;
 }
