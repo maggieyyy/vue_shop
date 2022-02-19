@@ -17,8 +17,12 @@ body,
     box-shadow: 0 10px 10px #333;
 }
 
-
 .el-cascader-panel {
     position: relative;
     height: 200px;
+}
+
+.el-tag {
+    margin: 7px;
+    cursor: pointer;
 }

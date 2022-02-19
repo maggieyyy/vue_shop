@@ -14,6 +14,7 @@
     <el-table :data="rolesList" border stripe>
         <el-table-column type="expand">
             <template slot-scope="scope" width="80%">
+              {{scope.row}}
                 <el-row :class="['bdbottom','vcenter',i1 === 0 ?'bdtop':'']" v-for="(child, i1) in scope.row.children" :key="child.id">
                     <el-col class="ccenter" :span="6">
                         <el-tag closable @close="deleteRole(scope.row, child.id)">
@@ -294,9 +295,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.el-tag {
-    margin: 7px;
-}
 .bdbottom {
     border-bottom: 1px solid #eee;
 }
@@ -313,8 +311,5 @@ export default {
 }
 .ccenter {
     text-align: center;
-}
-.el-tag {
-    cursor: pointer;
 }
 </style>
