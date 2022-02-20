@@ -26,3 +26,6 @@ body,
     margin: 7px;
     cursor: pointer;
 }
+.ql-editor{
+    min-height: 300px;
+}
