@@ -69,7 +69,6 @@ export default {
         pagesize: 20
       },
       goodsList: [],
-      dialogVisible: false,
       totalpage: 0
     }
   },
@@ -111,8 +110,15 @@ export default {
         })
       })
     },
-    handleSizeChange () {},
-    handleCurrentChange () {},
+    // 改变每页显示条数
+    handleSizeChange (val) {
+      this.reqGoodsList.pagesize = val
+      this.getGoodsList()
+    },
+    handleCurrentChange (val) {
+      this.reqGoodsList.pagenum = val
+      this.getGoodsList()
+    },
     handleClose () {}
   }
 }
