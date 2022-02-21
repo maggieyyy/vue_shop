@@ -80,7 +80,7 @@
         <el-dialog
         title="展示物流进度"
         :visible.sync="dialog2Visible"
-        width="50%"
+        width="60%"
         :before-close="handleClose2">
          <el-timeline :reverse="reverse">
         <el-timeline-item
